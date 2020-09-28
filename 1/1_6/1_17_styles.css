@@ -1,0 +1,1129 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: "futura book";
+	src: url("Futura Book Regular.otf");
+}
+
+@font-face {
+	font-family: "futura light";
+	src: url("Futura (Light).ttf");
+}
+
+@font-face {
+	font-family: "futura heavy";
+	src: url("FutuHv__.ttf");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.8vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+body {
+	margin: 0;
+}
+
+.col1 {
+	width: 15.6vw;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 6;
+}
+
+.col2 {
+	width: 68.05vw;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+}
+
+.col3 {
+	width: 15.6vw;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+
+.header {
+	height: 21.5vh;
+	width: 68.05vw;
+	position: fixed;
+	top: 0;
+	text-align: center;
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 24%);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+.title {
+	position: relative;
+	top: 0;
+	font-size: 2.7vw;
+	letter-spacing: 0.7vw;
+	font-family: futura book;
+	color: #404040;
+}
+
+.title p {
+	position: relative;
+	top: 3.5vh;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.composer a {
+	position: relative;
+	top: 6vh;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: futura book;
+	font-size: 1.6vw;
+	text-decoration: none;
+	color: #404040;
+}
+
+.score {
+	height: auto;
+	margin: 2vw 3vw;
+	position: relative;
+	top: 20vh;
+	z-index: -1;
+	background-image: url("images/6.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.main {
+	height: 14vh;
+	background-color: #E6E6E6;
+	color: aqua;
+}
+
+img.imgcenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	transform: translateY(+30%);
+}
+	
+/*--------------------------------------Book 1 Menu----------------------------------------------------*/
+
+.book1 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book1 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book1 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book1 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book1 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book1 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces1 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book1:hover .pieces1 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces1 li {
+	z-index: 5;
+}
+
+li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:15.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+/*--------------------------------------Book 2 Menu----------------------------------------------------*/
+
+.book2 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book2 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book2 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book2 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book2 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book2 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces2 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book2:hover .pieces2 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces2 li {
+	z-index: 5;
+}
+
+.pieces2 li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:17vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+/*--------------------------------------Book 3 Menu----------------------------------------------------*/
+
+.book3 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book3 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book3 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book3 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book3 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book3 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces3 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book3:hover .pieces3 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces3 li {
+	z-index: 5;
+}
+
+li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:15.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 4 Menu----------------------------------------------------*/
+
+.book4 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book4 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book4 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book4 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book4 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book4 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces4 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book4:hover .pieces4 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces4 li {
+	z-index: 5;
+}
+
+.pieces4 > li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:17vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 5 Menu----------------------------------------------------*/
+
+.book5 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book5 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book5 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book5 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book5 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book5 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces5 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book5:hover .pieces5 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces5 li {
+	z-index: 5;
+}
+
+.pieces5 > li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:17vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 6 Menu----------------------------------------------------*/
+
+.book6 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book6 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book6 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book6 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book6 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book6 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces6 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book6:hover .pieces6 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces6 li {
+	z-index: 5;
+}
+
+li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:15.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 7 Menu----------------------------------------------------*/
+
+.book7 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book7 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book7 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book7 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book7 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book7 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces7 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	top: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-top: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book7:hover .pieces7 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces7 li {
+	z-index: 5;
+}
+
+li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:15.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 8 Menu----------------------------------------------------*/
+
+.book8 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book8 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book8 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book8 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book8 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book8 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces8 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-bottom: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book8:hover .pieces8 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces8 li {
+	z-index: 5;
+}
+
+li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:15.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 9 Menu----------------------------------------------------*/
+
+.book9 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book9 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book9 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book9 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book9 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book9 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces9 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-bottom: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book9:hover .pieces9 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces9 li {
+	z-index: 5;
+}
+
+.pieces9 li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:17.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+/*--------------------------------------Book 10 Menu----------------------------------------------------*/
+
+.book10 {
+	position: relative;
+	font-size: 1.3vw;
+	font-family: futura book;
+	height: 8.6vh;
+	text-indent: 1vw;
+	z-index: 5;
+}
+
+.book10 > a {
+	text-decoration: none;
+	display:block;
+	height:100%;
+	width:100%;
+	background-color: #E6E6E6;
+	line-height: 8.6vh;
+}
+
+				.book10 > a:link {
+					color: #404040;
+					background-color: #E6E6E6;
+				}
+
+				.book10 > a:visited {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book10 > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				.book10 > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+.pieces10 {
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	bottom: 0;
+	left: 15.6vw;
+	z-index: 5;
+	margin-bottom: 0;
+	transition: all 0.3s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.book10:hover .pieces10 {
+	opacity: 1;
+	visibility: visible;
+}
+
+.pieces10 li {
+	z-index: 5;
+}
+
+.pieces10 li > a {
+	text-decoration: none;
+	display:block;
+	height:4vh;
+	width:17.6vw;
+	font-size: 1vw;
+	background-color: #E6E6E6;
+	text-indent: 0.8vw;
+	line-height: 4vh;
+	z-index: 5;
+}
+
+				li > a:link {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:visited {
+					color: #404040;
+					background-color: #F2F2F2;
+				}
+
+				li > a:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+				li > a:active {
+					color: #E48312;
+					background-color: #F4CDA0;
+				}
+
+
+
+
+/*--------------------------------------Options Panel------------------------------------------------*/
+
+.options {
+	font-size: 1.3vw;
+	font-family: futura book;
+	text-indent: 1vw;
+	color: #404040;
+	height: 16.66vh;
+	width: auto;
+	line-height: 16.66vh;
+	background-color: #E6E6E6;
+	user-select: none;
+}
+
+.stactive, #st:hover {
+					color: #5F4459;
+					background-color: #BFB0BC;
+					cursor: pointer;
+				}
+
+.tpactive, #tp:hover {
+					color: #046B6A;
+					background-color: #BBDEF0;
+					cursor: pointer;
+				}
+
+.rhactive, #rh:hover {
+					color: #A20000;
+					background-color: #C19999;
+					cursor: pointer;
+				}
+
+.lhactive, #lh:hover {
+					color: #BA8B00;
+					background-color: #FFD045;
+					cursor: pointer;
+				}
+
+.lsactive, #ls:hover {
+					color: #33534A;
+					background-color: #94B999;
+					cursor: pointer;
+				}
+
+.sbsactive, #sbs:hover {
+					color: #E48312;
+					background-color: #F4CDA0;
+					cursor: pointer;
+				}
